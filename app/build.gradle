@@ -32,5 +32,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation(name: 'leakcanary-analyzer-1.5.4', ext: 'aar')
-    implementation(name: 'leakcanary-android-1.5.4', ext: 'aar')
+    debugImplementation(name: 'leakcanary-android-1.5.4', ext: 'aar')
+//    releaseImplementation(name: 'leakcanary-android-no-op-1.5.4', ext: 'aar')
+//    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+//    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
 }

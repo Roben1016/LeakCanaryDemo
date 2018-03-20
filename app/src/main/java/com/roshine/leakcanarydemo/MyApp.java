@@ -23,8 +23,8 @@ public class MyApp extends Application {
             // You should not init your app in this process.
             return;
         }
-        enabledStrictMode();
         LeakCanary.install(this);
+        // Normal app init code...
     }
 
     private static void enabledStrictMode() {
